@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Jacques+Francois&family=Inter:wght@400&display=swap');
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 873px;
+            height: 211px;
+            background-color: black;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            background: url('path-to-logo.png') no-repeat center center;
+            background-size: cover;
+        }
+
+        .text-logo {
+            width: 300px;
+            height: 150px;
+            background: url('path-to-text-logo.png') no-repeat center center;
+            background-size: contain;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-buttons a {
+            display: inline-block;
+            width: 118px;
+            height: 28px;
+            text-align: center;
+            line-height: 28px;
+            color: #FFF;
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+            border: 1px solid #fff;
+            background-color: black;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-buttons a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .header {
+            text-align: center;
+            margin: 300px 0 50px;
+            font-size: 100px;
+            font-family: 'Fredericka the Great', cursive;
+            font-weight: 400;
+            color: #FFF;
+        }
+
+        .about-me-header {
+            text-align: center;
+            margin: 300px 0 10px;
+            font-size: 40px;
+            font-family: 'Jacques Francois', serif;
+            font-weight: 400;
+            color: #FFF;
+        }
+
+        .about-me {
+            width: 873px;
+            height: 630px;
+            margin: 10px auto;
+            background: url('path-to-image') lightgray 50% / cover no-repeat;
+        }
+
+        .grey-box {
+            width: 816px;
+            height: 234px;
+            margin: 26px auto;
+            background-color: #252930;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grey-box p {
+            width: 779px;
+            height: 181px;
+            color: #FFF;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin: 0;
+        }
+
+        .content-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"></div>
+        <div class="text-logo"></div>
+        <div class="nav-buttons">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact Info</a>
+        </div>
+    </nav>
+
+    <div class="header">
+        Hello!
+    </div>
+
+    <div class="about-me-header">
+        About Me
+    </div>
+
+    <div class="about-me">
+    </div>
+
+    <div class="grey-box">
+        <p>
+            Welcome to my page! I’m Venus. I’m currently a student studying computer science, biological science/neuroscience, hoping to enter the engineering field in the future. I came to the United States in 2010 with my parents from a small village called Ma Am in Lam Dong Province in Vietnam. Our village mostly consists of individuals who are of the Churu (or Chu Ru) ethnic group. We have a total population of 23,242 (2019) around the world. My parents were farmers in Vietnam and came here hoping to provide my siblings and I better opportunities and future. I hope to take advantage of this opportunity and create a better future for myself while inspiring young children and others to do the same! Check out more about me below!
+        </p>
+    </div>
+
+    <div class="content-section">
+        <div class="card">
+            <h3>Education</h3>
+            <p>Bachelor of Science - Computer Science...</p>
+        </div>
+        <div class="card">
+            <h3>Expected Graduation Dates</h3>
+            <p>Bachelor of Science - Computer Science: June 2027...</p>
+        </div>
+        <div class="card">
+            <h3>Other Learnings and Certificates</h3>
+            <ul>
+                <li>Udemy.com</li>
+                <li>Coursera.org</li>
+                <li>EdX.org</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Languages</h3>
+            <ul>
+                <li>English</li>
+                <li>Vietnamese</li>
+                <li>Churu</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Crocheting</li>
+                <li>Knitting</li>
+                <li>Reading</li>
+                <li>Coding</li>
+                <li>Binge Watching Shows and Movies</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
