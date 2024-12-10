@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     margin: 0;
     padding: 0;
@@ -19,39 +20,41 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     padding: 0 20px;
-    padding-bottom: 10px; /* Add spacing from the bottom */
+    padding-bottom: 10px;
 }
 
-.sticky-box .logo-of-co {
+.logo-of-co {
     position: absolute;
     top: 50%;
     left: 40px;
     transform: translateY(-50%);
-    width: 200px;
-    height: 200px;
-    background-color: #444;
-    border-radius: 10px;
+    width: calc(200px / 3 * 2); /* Reduce size by 1/3 */
+    height: calc(200px / 3 * 2);
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 0;
 }
 
-.sticky-box .text-logo-image {
+.text-logo-image {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 200px;
-    height: 100px;
-    background-color: #666;
-    border-radius: 10px;
+    width: calc(200px * 1.5); /* Increase size by 1.5x */
+    height: calc(100px * 1.5);
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 0;
 }
 
-.sticky-box .nav-buttons {
+.nav-buttons {
     display: flex;
     gap: 15px;
     margin-left: auto;
-    margin-right: 40px; /* Add spacing from the right edge */
+    margin-right: 40px;
 }
 
-.sticky-box .nav-buttons a {
+.nav-buttons a {
     color: #FFF;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
@@ -61,7 +64,7 @@ body {
     font-size: 20px;
 }
 
-.sticky-box .nav-buttons a:hover {
+.nav-buttons a:hover {
     background-color: #444;
     transition: background-color 0.3s;
 }
