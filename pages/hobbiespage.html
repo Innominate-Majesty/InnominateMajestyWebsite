@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the hobbies and interests of Venus. Click to learn more about various activities.">
+    <title>Hobbies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #FFF;
+        }
+
+        /* Sticky Box */
+        .sticky-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000;
+            height: 211px;
+            z-index: 1000;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 0 20px;
+            padding-bottom: 10px; /* Add spacing from the bottom */
+        }
+
+        .sticky-box .logo-of-co {
+            position: absolute;
+            top: 50%;
+            left: 40px;
+            transform: translateY(-50%);
+            width: 200px;
+            height: 200px;
+            background-color: #444;
+            border-radius: 10px;
+        }
+
+        .sticky-box .text-logo-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 100px;
+            background-color: #666;
+            border-radius: 10px;
+        }
+
+        .sticky-box .nav-buttons {
+            display: flex;
+            gap: 15px;
+            margin-left: auto;
+            margin-right: 40px; /* Add spacing from the right edge */
+        }
+
+        .sticky-box .nav-buttons a {
+            color: #FFF;
+            font-family: 'Inter', sans-serif;
+            text-decoration: none;
+            background-color: #000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .sticky-box .nav-buttons a:hover {
+            background-color: #444;
+            transition: background-color 0.3s;
+        }
+
+        /* Main Content */
+        .content {
+            margin-top: 250px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .heading {
+            font-family: 'Fredericka the Great', cursive;
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .small-grey-box, .large-grey-box {
+            background-color: #252930;
+            border-radius: 20px;
+            color: #DDD;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Hi Melody', cursive;
+            font-size: 60px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .small-grey-box {
+            width: calc(50% - 10px);
+            height: 150px;
+        }
+
+        .large-grey-box {
+            width: 100%;
+            height: 150px;
+        }
+
+        .small-grey-box:hover, .large-grey-box:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky-box">
+        <div class="logo-of-co" aria-label="Company Logo"></div>
+        <div class="text-logo-image" aria-label="Text Logo"></div>
+        <div class="nav-buttons">
+            <a href="homepage.html" aria-label="Navigate to Home">Home</a>
+            <a href="projects.html" aria-label="Navigate to Projects">Projects</a>
+            <a href="hobbies.html" aria-label="Navigate to Hobbies">Hobbies</a>
+            <a href="contact.html" aria-label="Navigate to Contact Info">Contact Info</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="heading">Click to learn more</div>
+        <div class="flex-container">
+            <div class="small-grey-box">Crochet</div>
+            <div class="small-grey-box">Knit</div>
+            <div class="small-grey-box">Reading</div>
+            <div class="small-grey-box">Binge Watching</div>
+            <div class="small-grey-box">Crochet</div>
+            <div class="small-grey-box">List of Anime</div>
+            <div class="large-grey-box">Learn More about a Country</div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+

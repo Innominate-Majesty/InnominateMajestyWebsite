@@ -1,40 +1,18 @@
-// navigation_buttons.js
+// javascript file for button navigations
 
-// Event listeners for navigation buttons
 document.addEventListener("DOMContentLoaded", () => {
-    // Home button
-    const homeButton = document.querySelector("a[href='#home']");
-    homeButton.addEventListener("click", (e) => {
-        e.preventDefault();
-        scrollToSection("#home-section");
-    });
+    // Create the navigation buttons HTML
+    const navHTML = `
+        <div class="nav-buttons">
+            <a href="homepage.html" aria-label="Navigate to Home">Home</a>
+            <a href="#projects" aria-label="Navigate to Projects">Projects</a>
+            <a href="#hobbies" aria-label="Navigate to Hobbies">Hobbies</a>
+            <a href="#contact" aria-label="Navigate to Contact Info">Contact Info</a>
+        </div>
+    `;
 
-    // Projects button
-    const projectsButton = document.querySelector("a[href='#projects']");
-    projectsButton.addEventListener("click", (e) => {
-        e.preventDefault();
-        scrollToSection("#projects-section");
-    });
-
-    // Hobbies button
-    const hobbiesButton = document.querySelector("a[href='#hobbies']");
-    hobbiesButton.addEventListener("click", (e) => {
-        e.preventDefault();
-        scrollToSection("#hobbies-section");
-    });
-
-    // Contact Info button
-    const contactButton = document.querySelector("a[href='#contact']");
-    contactButton.addEventListener("click", (e) => {
-        e.preventDefault();
-        scrollToSection("#contact-section");
-    });
+    // Select the sticky box and append the buttons
+    const stickyBox = document.querySelector(".sticky-box");
+    stickyBox.insertAdjacentHTML("beforeend", navHTML);
 });
 
-// Scroll to the respective section
-function scrollToSection(sectionId) {
-    const section = document.querySelector(sectionId);
-    if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-    }
-}
