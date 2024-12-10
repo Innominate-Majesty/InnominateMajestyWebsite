@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Jacques+Francois&family=Inter:wght@400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Jacques+Francois&family=Fresca&family=Inter:wght@400&family=Gowun+Batang:wght@400&display=swap');
 
         body {
             margin: 0;
@@ -122,27 +122,52 @@
             margin: 0;
         }
 
-        .content-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+        .left-box {
+            width: 378px;
+            height: 272px;
+            background-color: #252930;
+            border-radius: 20px;
+            position: absolute;
+            left: 55px;
+            top: 1769px;
             padding: 20px;
+            box-sizing: border-box;
         }
 
-        .card {
-            background-color: #333;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        .left-box h3 {
+            color: #FFF;
+            font-family: 'Fresca', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0 0 10px;
         }
 
-        .card h3 {
-            margin-top: 0;
+        .left-box p {
+            color: #FFF;
+            font-family: 'Gowun Batang', serif;
+            font-size: 11px;
+            font-weight: 400;
+            margin: 0;
         }
 
-        .card ul {
-            list-style-type: disc;
-            margin-left: 20px;
+        .logo-white {
+            width: 70px;
+            height: 83.366px;
+            background: url('logo-white.png') no-repeat center center;
+            background-size: contain;
+            position: absolute;
+            left: 95px;
+            top: 1900px;
+        }
+
+        .sjcc-logo {
+            width: 150px;
+            height: 83.333px;
+            background: url('SJCC_logo_stamp.png') no-repeat center center;
+            background-size: contain;
+            position: absolute;
+            left: 216px;
+            top: 1900px;
         }
     </style>
 </head>
@@ -174,6 +199,18 @@
             Welcome to my page! I’m Venus. I’m currently a student studying computer science, biological science/neuroscience, hoping to enter the engineering field in the future. I came to the United States in 2010 with my parents from a small village called Ma Am in Lam Dong Province in Vietnam. Our village mostly consists of individuals who are of the Churu (or Chu Ru) ethnic group. We have a total population of 23,242 (2019) around the world. My parents were farmers in Vietnam and came here hoping to provide my siblings and I better opportunities and future. I hope to take advantage of this opportunity and create a better future for myself while inspiring young children and others to do the same! Check out more about me below!
         </p>
     </div>
+
+    <div class="left-box">
+        <h3>Education(s):</h3>
+        <p>Bachelors of Science - Computer Science<br>
+           Bachelors of Science - Neuroscience/Cognitive Science<br>
+           Associates of Science - Biological Science<br>
+           Associates of Science - Mathematics<br>
+           Associates of Science - Psychology</p>
+    </div>
+
+    <div class="logo-white"></div>
+    <div class="sjcc-logo"></div>
 
     <div class="content-section">
         <div class="card">
