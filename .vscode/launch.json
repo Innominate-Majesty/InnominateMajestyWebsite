@@ -4,13 +4,14 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
 
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open homepage.html",
-            "name": "Open hobbiespage.html",
-            "name": "Open countrypage.html",
+            "name": "homepage.html",
+            "name": "hobbiespage.html",
+            "name": "countrypage.html",
             "file": "/Users/innominate-majesty/InnominateMajestyCom/InnominateMajestyWebsite/pages/homepage.html",
             "file": "/Users/innominate-majesty/InnominateMajestyCom/InnominateMajestyWebsite/pages/hobbiespage.html",
             "file": "/Users/innominate-majesty/InnominateMajestyCom/InnominateMajestyWebsite/pages/countrypage.html"        }

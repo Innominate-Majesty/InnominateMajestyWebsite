@@ -1,0 +1,229 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #FFF;
+}
+
+/* Sticky Box */
+.sticky-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    height: 211px;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-bottom: 10px; /* Add spacing from the bottom */
+}
+
+.sticky-box .logo-of-co {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+    background-color: #444;
+    border-radius: 10px;
+}
+
+.sticky-box .text-logo-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    background-color: #666;
+    border-radius: 10px;
+}
+
+.sticky-box .nav-buttons {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: 40px; /* Add spacing from the right edge */
+}
+
+.sticky-box .nav-buttons a {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.sticky-box .nav-buttons a:hover {
+    background-color: #444;
+    transition: background-color 0.3s;
+}
+
+/* Main Content */
+.content {
+    margin-top: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.hello {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 100px;
+}
+
+.about-me {
+    margin-top: 300px;
+    font-family: 'Jacques Francois', serif;
+    font-size: 40px;
+}
+
+.image {
+    margin-top: 10px;
+    width: 873px;
+    height: 630px;
+    background: url('path-to-image') lightgray 50% / cover no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    alt: "About Me Image";
+}
+
+.grey-box {
+    background-color: #252930;
+    border-radius: 20px;
+    width: 816px;
+    height: 234px;
+    margin: 26px auto;
+    padding: 20px;
+    color: #DDD;
+}
+
+.grey-box p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Box Styles */
+.small-grey-box {
+    background-color: #252930;
+    border-radius: 20px;
+    width: calc(50% - 10px); /* Ensure two boxes per row with equal size */
+    height: auto;
+    padding: 20px;
+    color: #DDD;
+    box-sizing: border-box;
+}
+
+.small-grey-box h3 {
+    font-family: 'Fresca', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.small-grey-box p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.small-grey-box ul {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    margin: 10px 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.small-grey-box ul li {
+    margin-bottom: 5px;
+}
+
+.small-grey-box .image-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.small-grey-box .image-container .image-slot {
+    background-color: #444;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.small-grey-box .image-container .image-slot.image-1 {
+    width: 70px;
+    height: 83.37px;
+}
+
+.small-grey-box .image-container .image-slot.image-2 {
+    width: 150px;
+    height: 83.33px;
+}
+
+.small-grey-box.empty {
+    height: auto; /* Matches the size dynamically */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .sticky-box {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .sticky-box .nav-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .hello {
+        font-size: 70px;
+    }
+
+    .about-me {
+        font-size: 30px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .grey-box, .small-grey-box {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .small-grey-box .image-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
