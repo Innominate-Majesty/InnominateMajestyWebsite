@@ -167,22 +167,22 @@ body {
 }
 
 .image-container img {
-    object-fit: contain; /* Properly scale images */
-    background-color: transparent; /* Remove gray background */
+    object-fit: contain; 
+    background-color: transparent; 
 }
 
 .image-container .mission-coll {
-    width: 70px; /* MissionColl specific width */
-    height: 83.37px; /* MissionColl specific height */
+    width: 70px; 
+    height: 83.37px; 
 }
 
 .image-container .sjcc-logo {
-    width: 150px; /* SJCCLogo specific width */
-    height: 83.33px; /* SJCCLogo specific height */
+    width: 150px; 
+    height: 83.33px; 
 }
 
 .small-grey-box.empty {
-    height: auto; /* Matches the size dynamically */
+    height: auto; 
 }
 
 /* Media Queries for Responsiveness */
