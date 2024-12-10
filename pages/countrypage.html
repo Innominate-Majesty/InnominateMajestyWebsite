@@ -112,10 +112,36 @@
             transition: background-color 0.3s;
             width: calc(50% - 20px);
             height: 150px;
+            background-size: cover;
+            background-position: center;
         }
 
         .small-grey-box:hover {
             background-color: #333;
+        }
+
+        .small-grey-box.usa {
+            background-image: url('/InnominateMajestyCom/InnominateMajestyWebsite/images/Flags/usaflag.png');
+        }
+
+        .small-grey-box.vietnam {
+            background-image: url('images/Flags/vnflag.svg.png');
+        }
+
+        .small-grey-box.japan {
+            background-image: url('images/Flags/japanflag.svg.png'); 
+        }
+
+        .small-grey-box.south-korea {
+            background-image: url('images/Flags/southkoreaflag.svg.png'); 
+        }
+
+        .small-grey-box.france {
+            background-image: url('images/Flags/franceflag.svg.png');
+        }
+
+        .small-grey-box.germany {
+            background-image: url('images/Flags/germanyflag.svg.png'); 
         }
     </style>
 </head>
@@ -134,12 +160,12 @@
     <div class="content">
         <div class="heading">Click to learn more</div>
         <div class="flex-container">
-            <div class="small-grey-box">USA</div>
-            <div class="small-grey-box">Vietnam</div>
-            <div class="small-grey-box">Japan</div>
-            <div class="small-grey-box">South Korea</div>
-            <div class="small-grey-box">France</div>
-            <div class="small-grey-box">Germany</div>
+            <div class="small-grey-box usa">USA</div>
+            <div class="small-grey-box vietnam">Vietnam</div>
+            <div class="small-grey-box japan">Japan</div>
+            <div class="small-grey-box south-korea">South Korea</div>
+            <div class="small-grey-box france">France</div>
+            <div class="small-grey-box germany">Germany</div>
         </div>
     </div>
 </body>
