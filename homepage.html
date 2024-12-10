@@ -25,22 +25,39 @@
             height: 211px;
             z-index: 1000;
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             justify-content: space-between;
             padding: 0 20px;
+            padding-bottom: 10px; /* Add spacing from the bottom */
         }
 
-        .sticky-box .logo {
-            width: 150px;
-            height: 150px;
-            background: url('path-to-logo') no-repeat center/contain;
-            alt: "Company Logo";
+        .sticky-box .logo-of-co {
+            position: absolute;
+            top: 50%;
+            left: 40px;
+            transform: translateY(-50%);
+            width: 200px;
+            height: 200px;
+            background-color: #444;
+            border-radius: 10px;
+        }
+
+        .sticky-box .text-logo-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 100px;
+            background-color: #666;
+            border-radius: 10px;
         }
 
         .sticky-box .nav-buttons {
             display: flex;
             gap: 15px;
-            margin-right: 20px;
+            margin-left: auto;
+            margin-right: 40px; /* Add spacing from the right edge */
         }
 
         .sticky-box .nav-buttons a {
@@ -222,7 +239,8 @@
 </head>
 <body>
     <div class="sticky-box">
-        <div class="logo" aria-label="Logo"></div>
+        <div class="logo-of-co" aria-label="Company Logo"></div>
+        <div class="text-logo-image" aria-label="Text Logo"></div>
         <div class="nav-buttons">
             <a href="#home" aria-label="Navigate to Home">Home</a>
             <a href="#projects" aria-label="Navigate to Projects">Projects</a>
@@ -292,6 +310,8 @@
     </div>
 </body>
 </html>
+
+
 
 
 
