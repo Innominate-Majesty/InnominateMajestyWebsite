@@ -20,39 +20,41 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     padding: 0 20px;
-    padding-bottom: 10px; /* Add spacing from the bottom */
+    padding-bottom: 10px;
 }
 
-.sticky-box .logo-of-co {
+.logo-of-co {
     position: absolute;
     top: 50%;
     left: 40px;
     transform: translateY(-50%);
-    width: 200px;
-    height: 200px;
-    background-color: #444;
-    border-radius: 10px;
+    width: calc(200px / 3 * 2); 
+    height: calc(200px / 3 * 2); 
+    object-fit: contain; 
+    background-color: transparent; 
+    border-radius: 0; 
 }
 
-.sticky-box .text-logo-image {
+.text-logo-image {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 200px;
-    height: 100px;
-    background-color: #666;
-    border-radius: 10px;
+    width: calc(200px * 1.5); 
+    height: calc(100px * 1.5); 
+    object-fit: contain; 
+    background-color: transparent; 
+    border-radius: 0; 
 }
 
-.sticky-box .nav-buttons {
+.nav-buttons {
     display: flex;
     gap: 15px;
     margin-left: auto;
-    margin-right: 40px; /* Add spacing from the right edge */
+    margin-right: 40px;
 }
 
-.sticky-box .nav-buttons a {
+.nav-buttons a {
     color: #FFF;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
@@ -62,7 +64,7 @@ body {
     font-size: 20px;
 }
 
-.sticky-box .nav-buttons a:hover {
+.nav-buttons a:hover {
     background-color: #444;
     transition: background-color 0.3s;
 }
@@ -125,7 +127,7 @@ body {
 .small-grey-box {
     background-color: #252930;
     border-radius: 20px;
-    width: calc(50% - 10px); /* Ensure two boxes per row with equal size */
+    width: calc(50% - 10px);
     height: auto;
     padding: 20px;
     color: #DDD;
@@ -157,27 +159,26 @@ body {
     margin-bottom: 5px;
 }
 
-.small-grey-box .image-container {
+.image-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 20px;
 }
 
-.small-grey-box .image-container .image-slot {
-    background-color: #444;
-    border-radius: 10px;
-    display: inline-block;
+.image-container img {
+    object-fit: contain; /* Properly scale images */
+    background-color: transparent; /* Remove gray background */
 }
 
-.small-grey-box .image-container .image-slot.image-1 {
-    width: 70px;
-    height: 83.37px;
+.image-container .mission-coll {
+    width: 70px; /* MissionColl specific width */
+    height: 83.37px; /* MissionColl specific height */
 }
 
-.small-grey-box .image-container .image-slot.image-2 {
-    width: 150px;
-    height: 83.33px;
+.image-container .sjcc-logo {
+    width: 150px; /* SJCCLogo specific width */
+    height: 83.33px; /* SJCCLogo specific height */
 }
 
 .small-grey-box.empty {

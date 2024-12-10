@@ -9,8 +9,10 @@
             "type": "chrome",
             "request": "launch",
             "name": "homepage.html",
-
+            "name": "hobbiespage.html",
+            "name": "countrypage.html",
             "file": "/Users/innominate-majesty/InnominateMajestyCom/InnominateMajestyWebsite/pages/homepage.html",
-      }
+            "file": "/Users/innominate-majesty/InnominateMajestyCom/InnominateMajestyWebsite/pages/hobbiespage.html",
+            "file": "/Users/innominate-majesty/InnominateMajestyCom/InnominateMajestyWebsite/pages/countrypage.html"        }
     ]
 }

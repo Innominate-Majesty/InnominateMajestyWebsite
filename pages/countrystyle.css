@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #FFF;
+}
+
+/* Sticky Box */
+.sticky-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    height: 211px;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-bottom: 10px; /* Add spacing from the bottom */
+}
+
+.sticky-box .logo-of-co {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+    background-color: #444;
+    border-radius: 10px;
+}
+
+.sticky-box .text-logo-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    background-color: #666;
+    border-radius: 10px;
+}
+
+.sticky-box .nav-buttons {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: 40px; /* Add spacing from the right edge */
+}
+
+.sticky-box .nav-buttons a {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.sticky-box .nav-buttons a:hover {
+    background-color: #444;
+    transition: background-color 0.3s;
+}
+
+/* Main Content */
+.content {
+    margin-top: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.heading {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.small-grey-box {
+    background-color: #252930;
+    border-radius: 20px;
+    color: #000; /* Set the text color to black */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hi Melody', cursive;
+    font-size: 60px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    width: calc(50% - 20px);
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.small-grey-box:hover {
+    background-color: #333;
+}
+
+.small-grey-box.usa {
+    background-image: url('/Users/innominate-majesty/InnominateMajestyCom/InnominateMajestyWebsite/images/Flags/usaflag.png');
+}
+
+.small-grey-box.vietnam {
+    background-image: url('/Users/innominate-majesty/InnominateMajestyCom/InnominateMajestyWebsite/images/Flags/vnflag.svg.png');
+}
+
+.small-grey-box.japan {
+    background-image: url('/Users/innominate-majesty/InnominateMajestyCom/InnominateMajestyWebsite/images/Flags/japanflag.svg.png');
+}
+
+.small-grey-box.south-korea {
+    background-image: url('/Users/innominate-majesty/InnominateMajestyCom/InnominateMajestyWebsite/images/Flags/southkoreaflag.svg.png');
+}
+
+.small-grey-box.france {
+    background-image: url('/Users/innominate-majesty/InnominateMajestyCom/InnominateMajestyWebsite/images/Flags/franceflag.svg.png');
+}
+
+.small-grey-box.germany {
+    background-image: url('/Users/innominate-majesty/InnominateMajestyCom/InnominateMajestyWebsite/images/Flags/germanyflag.svg.png');
+}
+
